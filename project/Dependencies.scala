@@ -82,7 +82,7 @@ object Dependencies {
   val luceneQueryparser =
     "org.apache.lucene" % "lucene-queryparser" % "4.5.1" // Replacement for lucene-queryparser-4.5.1.jar
   val luceneSandbox = "org.apache.lucene" % "lucene-sandbox" % "4.5.1" // Replacement for lucene-sandbox-4.5.1.jar
-  val mail = "com.sun.mail" % "javax.mail" % "1.4.7" // Replacement for mail-1.4.7.jar
+  val mail = "com.sun.mail" % "javax.mail" % "1.6.2" // Replacement for mail-1.4.7.jar
   val miglayout = "com.miglayout" % "miglayout-swing" % "11.4.2" // Replacement for miglayout-4.0.jar
   val mimepull = "org.jvnet.mimepull" % "mimepull" % "1.9.14" // Replacement for mimepull-1.6.jar
   val mysqlConnectorJava =
