@@ -110,7 +110,7 @@ object Dependencies {
   //  val tridentSwing = "org.pushingpixels" % "trident" % "7.2.1" // Replacement for trident-7.2.1-swing.jar
   val velocity = "org.apache.velocity" % "velocity" % "1.7" // Replacement for velocity-1.7.jar
   val xercesImpl = "xerces" % "xercesImpl" % "2.10.0" // Replacement for xercesImpl-2.10.0.jar
-  val xmlApis = "xml-apis" % "xml-apis" % "1.4.01" // Replacement for xml-apis-1.4.01.jar
+  val xmlApis = "xml-apis" % "xml-apis" % "2.0.2" // Replacement for xml-apis-1.4.01.jar
   val xmlParserAPIs = "xml-apis" % "xmlParserAPIs" % "2.0.2" // Replacement for xmlParserAPIs-2.0.2.jar
   val zxing = "com.google.zxing" % "core" % "2.1" // Replacement for zxing-2.1.jar
   val zxingCore = "com.google.zxing" % "core" % "3.2.1" // Replacement for core-3.2.1.jar
