@@ -52,7 +52,7 @@ object Dependencies {
   val javaxInject = "javax.inject" % "javax.inject" % "1" // Replacement for javax.inject-1.jar
   val jcommon = "org.jfree" % "jcommon" % "1.0.23" // Replacement for jcommon-1.0.23.jar
   val jdbm = "jdbm" % "jdbm" % "1.0" // Replacement for jdbm-1.0.jar
-  val jdom = "org.jdom" % "jdom" % "1.1.3" // Replacement for jdom-1.1.3.jar
+  val jdom = "org.jdom" % "jdom" % "2.0.2" // Replacement for jdom-1.1.3.jar
   val je = "com.sleepycat" % "je" % "5.0.73" // Replacement for je-5.0.73.jar
   val jerseyBundle = "com.sun.jersey" % "jersey-bundle" % "1.19.4" // Replacement for jersey-bundle-1.9-ea04.jar
   val jerseyMultipart =
