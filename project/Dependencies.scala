@@ -91,7 +91,7 @@ object Dependencies {
   val olap4j = "org.olap4j" % "olap4j" % "1.2.0" // Replacement for olap4j-0.9.7.309-JS-3.jar
   val orgEclipseJdtCore =
     "org.eclipse.jdt" % "org.eclipse.jdt.core" % "3.10.0" // Replacement for org.eclipse.jdt.core-3.10.0.jar
-  val orgOsgiCore = "org.osgi" % "org.osgi.core" % "4.3.1" // Replacement for org.osgi.core-4.3.1.jar
+  val orgOsgiCore = "org.osgi" % "org.osgi.core" % "6.0.0" // Replacement for org.osgi.core-4.3.1.jar
   val oro = "oro" % "oro" % "2.0.8" // Replacement for oro-2.0.8.jar
   val poi = "org.apache.poi" % "poi" % "3.12" // Replacement for poi-3.12.jar
   val postgresql = "org.postgresql" % "postgresql" % "9.4-1201-jdbc4" // Replacement for postgresql-9.4-1201-jdbc4.jar
