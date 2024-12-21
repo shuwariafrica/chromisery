@@ -113,7 +113,7 @@ object Dependencies {
   val xmlApis = "xml-apis" % "xml-apis" % "1.4.01" // Replacement for xml-apis-1.4.01.jar
   val xmlParserAPIs = "xml-apis" % "xmlParserAPIs" % "2.0.2" // Replacement for xmlParserAPIs-2.0.2.jar
   val zxing = "com.google.zxing" % "core" % "2.1" // Replacement for zxing-2.1.jar
-  val zxingCore = "com.google.zxing" % "core" % "3.2.1" // Replacement for core-3.2.1.jar
+  val zxingCore = "com.google.zxing" % "core" % "3.5.3" // Replacement for core-3.2.1.jar
 
   val posDependencies: List[ModuleID] = List(
     activation,
