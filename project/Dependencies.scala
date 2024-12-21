@@ -33,7 +33,7 @@ object Dependencies {
   val ecj = "org.eclipse.jdt" % "ecj" % "3.40.0" // Replacement for ecj-4.4.2.jar
   val fop = "org.apache.xmlgraphics" % "fop" % "2.3" // Replacement for fop-2.3.jar
   val gson = "com.google.code.gson" % "gson" % "2.2.2" // Replacement for gson-2.2.2.jar
-  val hamcrestCore = "org.hamcrest" % "hamcrest-core" % "1.3" // Replacement for hamcrest-core-1.3.jar
+  val hamcrestCore = "org.hamcrest" % "hamcrest-core" % "3.0" // Replacement for hamcrest-core-1.3.jar
   val httpclient =
     "org.apache.httpcomponents" % "httpclient" % "4.0-alpha4" // Replacement for httpclient-4.0-alpha4.jar
   val httpcore = "org.apache.httpcomponents" % "httpcore" % "4.0-beta1" // Replacement for httpcore-4.0-beta1.jar
