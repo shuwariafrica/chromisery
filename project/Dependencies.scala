@@ -50,7 +50,7 @@ object Dependencies {
   //  val javacsv = "net.sf.opencsv" % "opencsv" % "2.0" // Replacement for javacsv-2.0.jar
   val javatuples = "org.javatuples" % "javatuples" % "1.2" // Replacement for javatuples-1.2.jar
   val javaxInject = "javax.inject" % "javax.inject" % "1" // Replacement for javax.inject-1.jar
-  val jcommon = "org.jfree" % "jcommon" % "1.0.23" // Replacement for jcommon-1.0.23.jar
+  val jcommon = "org.jfree" % "jcommon" % "1.0.24" // Replacement for jcommon-1.0.23.jar
   val jdbm = "jdbm" % "jdbm" % "1.0" // Replacement for jdbm-1.0.jar
   val jdom = "org.jdom" % "jdom" % "1.1.3" // Replacement for jdom-1.1.3.jar
   val je = "com.sleepycat" % "je" % "5.0.73" // Replacement for je-5.0.73.jar
