@@ -36,7 +36,7 @@ object Dependencies {
   val hamcrestCore = "org.hamcrest" % "hamcrest-core" % "1.3" // Replacement for hamcrest-core-1.3.jar
   val httpclient =
     "org.apache.httpcomponents" % "httpclient" % "4.0-alpha4" // Replacement for httpclient-4.0-alpha4.jar
-  val httpcore = "org.apache.httpcomponents" % "httpcore" % "4.0-beta1" // Replacement for httpcore-4.0-beta1.jar
+  val httpcore = "org.apache.httpcomponents" % "httpcore" % "4.4.16" // Replacement for httpcore-4.0-beta1.jar
   val itext = "com.lowagie" % "itext" % "2.0.8" // Replacement for itext-2.1.7.jar
   val iTextAsian = "com.itextpdf" % "itext-asian" % "5.2.0" // Replacement for iTextAsian.jar
   val jasperReports = ("net.sf.jasperreports" % "jasperreports" % "6.2.1")
