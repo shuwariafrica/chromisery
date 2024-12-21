@@ -86,7 +86,7 @@ object Dependencies {
   val miglayout = "com.miglayout" % "miglayout-swing" % "11.4.2" // Replacement for miglayout-4.0.jar
   val mimepull = "org.jvnet.mimepull" % "mimepull" % "1.9.14" // Replacement for mimepull-1.6.jar
   val mysqlConnectorJava =
-    "mysql" % "mysql-connector-java" % "5.1.45" // Replacement for mysql-connector-java-5.1.45.jar
+    "mysql" % "mysql-connector-java" % "5.1.49" // Replacement for mysql-connector-java-5.1.45.jar
   val nrjavaserial = "com.neuronrobotics" % "nrjavaserial" % "3.11.0" // Replacement for nrjavaserial-3.11.0.jar
   val olap4j = "org.olap4j" % "olap4j" % "1.2.0" // Replacement for olap4j-0.9.7.309-JS-3.jar
   val orgEclipseJdtCore =
