@@ -59,7 +59,7 @@ object Dependencies {
     "com.sun.jersey.contribs" % "jersey-multipart" % "1.19.4" // Replacement for jersey-multipart-1.15.jar
   val jfreechart = "org.jfree" % "jfreechart" % "1.0.19" // Replacement for jfreechart-1.0.19.jar
   val jline = "jline" % "jline" % "1.0" // Replacement for jline-1.0.jar
-  val jodaTime = "joda-time" % "joda-time" % "2.8.2" // Replacement for joda-time-2.8.2.jar
+  val jodaTime = "joda-time" % "joda-time" % "2.13.0" // Replacement for joda-time-2.8.2.jar
   //  val jpos = "org.jpos" % "jpos" % "1.9.8" // Replacement for jpos-1.13.jar
   val js = "org.mozilla" % "rhino" % "1.7.13" // Replacement for js-1
   val jsonSimple = "com.googlecode.json-simple" % "json-simple" % "1.1.1" // Replacement for json-simple-1.1.1.jar
