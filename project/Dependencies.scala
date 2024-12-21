@@ -57,7 +57,7 @@ object Dependencies {
   val jerseyBundle = "com.sun.jersey" % "jersey-bundle" % "1.19.4" // Replacement for jersey-bundle-1.9-ea04.jar
   val jerseyMultipart =
     "com.sun.jersey.contribs" % "jersey-multipart" % "1.19.4" // Replacement for jersey-multipart-1.15.jar
-  val jfreechart = "org.jfree" % "jfreechart" % "1.0.19" // Replacement for jfreechart-1.0.19.jar
+  val jfreechart = "org.jfree" % "jfreechart" % "1.5.5" // Replacement for jfreechart-1.0.19.jar
   val jline = "jline" % "jline" % "1.0" // Replacement for jline-1.0.jar
   val jodaTime = "joda-time" % "joda-time" % "2.8.2" // Replacement for joda-time-2.8.2.jar
   //  val jpos = "org.jpos" % "jpos" % "1.9.8" // Replacement for jpos-1.13.jar
