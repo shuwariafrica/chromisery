@@ -21,7 +21,7 @@ object Dependencies {
   val bluecove = "net.sf.bluecove" % "bluecove-gpl" % "2.1.0" // Replacement for bluecove-gpl-2.1.0.jar
   val bsh = "org.beanshell" % "bsh" % "2.0b5" // Replacement for bsh-2.0b5.jar
   val colorpicker = "org.drjekyll" % "colorpicker" % "2.0.1" // Replacement for colorpicker.jar
-  val commonsCodec = "commons-codec" % "commons-codec" % "1.10" // Replacement for commons-codec-1.10.jar
+  val commonsCodec = "commons-codec" % "commons-codec" % "1.17.1" // Replacement for commons-codec-1.10.jar
   val commonsCollections =
     "commons-collections" % "commons-collections" % "3.2.1" // Replacement for commons-collections-3.2.1.jar
   val commonsDigester = "commons-digester" % "commons-digester" % "2.1" // Replacement for commons-digester-2.1.jar
