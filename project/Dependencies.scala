@@ -99,7 +99,7 @@ object Dependencies {
   val rxtx = "org.rxtx" % "rxtx" % "2.1.7" // Replacement for RXTXcomm.jar
   val saajApi = "javax.xml.soap" % "saaj-api" % "1.3.5" // Replacement for saaj-api-1.3.5.jar
   val slf4jApi = "org.slf4j" % "slf4j-api" % "1.7.25" // Replacement for slf4j-api-1.7.25.jar
-  val slf4jLog4j12 = "org.slf4j" % "slf4j-log4j12" % "1.6.2" // Replacement for slf4j-log4j12-1.6.2.jar
+  val slf4jLog4j12 = "org.slf4j" % "slf4j-log4j12" % "1.6.6" // Replacement for slf4j-log4j12-1.6.2.jar
   val staxApi = "javax.xml.stream" % "stax-api" % "1.0-2" // Replacement for stax-api-1.0-2.jar
   //  val substanceExtras = "org.pushingpixels" % "substance-extras" % "7.2.1" // Replacement for substance-extras.jar
   val substanceSwingx =
