@@ -76,12 +76,12 @@ object Dependencies {
   val logbackClassic = "ch.qos.logback" % "logback-classic" % "1.2.3" // Replacement for logback-classic-1.2.3.jar
   val logbackCore = "ch.qos.logback" % "logback-core" % "1.2.3" // Replacement for logback-core-1.2.3.jar
   val luceneAnalyzersCommon =
-    "org.apache.lucene" % "lucene-analyzers-common" % "4.5.1" // Replacement for lucene-analyzers-common-4.5.1.jar
-  val luceneCore = "org.apache.lucene" % "lucene-core" % "4.5.1" // Replacement for lucene-core-4.5.1.jar
-  val luceneQueries = "org.apache.lucene" % "lucene-queries" % "4.5.1" // Replacement for lucene-queries-4.5.1.jar
+    "org.apache.lucene" % "lucene-analyzers-common" % "4.10.4" // Replacement for lucene-analyzers-common-4.5.1.jar
+  val luceneCore = "org.apache.lucene" % "lucene-core" % "4.10.4" // Replacement for lucene-core-4.5.1.jar
+  val luceneQueries = "org.apache.lucene" % "lucene-queries" % "4.10.4" // Replacement for lucene-queries-4.5.1.jar
   val luceneQueryparser =
-    "org.apache.lucene" % "lucene-queryparser" % "4.5.1" // Replacement for lucene-queryparser-4.5.1.jar
-  val luceneSandbox = "org.apache.lucene" % "lucene-sandbox" % "4.5.1" // Replacement for lucene-sandbox-4.5.1.jar
+    "org.apache.lucene" % "lucene-queryparser" % "4.10.4" // Replacement for lucene-queryparser-4.5.1.jar
+  val luceneSandbox = "org.apache.lucene" % "lucene-sandbox" % "4.10.4" // Replacement for lucene-sandbox-4.5.1.jar
   val mail = "com.sun.mail" % "javax.mail" % "1.4.7" // Replacement for mail-1.4.7.jar
   val miglayout = "com.miglayout" % "miglayout-swing" % "11.4.2" // Replacement for miglayout-4.0.jar
   val mimepull = "org.jvnet.mimepull" % "mimepull" % "1.9.14" // Replacement for mimepull-1.6.jar
