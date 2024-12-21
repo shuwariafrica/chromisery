@@ -39,7 +39,7 @@ object Dependencies {
   val httpcore = "org.apache.httpcomponents" % "httpcore" % "4.0-beta1" // Replacement for httpcore-4.0-beta1.jar
   val itext = "com.lowagie" % "itext" % "2.0.8" // Replacement for itext-2.1.7.jar
   val iTextAsian = "com.itextpdf" % "itext-asian" % "5.2.0" // Replacement for iTextAsian.jar
-  val jasperReports = ("net.sf.jasperreports" % "jasperreports" % "6.2.1")
+  val jasperReports = ("net.sf.jasperreports" % "jasperreports" % "6.2.2")
     .exclude("com.lowagie", "itext") // Replacement for jasperreports-6.2.1.jar
   val jasperreportsFonts =
     "net.sf.jasperreports" % "jasperreports-fonts" % "6.21.4" // Replacement for jasperreports-fonts-6.2.1.jar
