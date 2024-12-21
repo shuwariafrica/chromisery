@@ -13,3 +13,23 @@
 chromispos.jar
 /chromisLiquibase.log
 /log4j.xml
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Build tool specific files
+.bloop/
+.bsp/
+.mdoc/
+.metals/
+metals.sbt
+
+# PowerShell specific files
+PowerShell*/
+
+# Build output directories
+target/
+
+# Miscellaneous
+null/
