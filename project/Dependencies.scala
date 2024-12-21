@@ -71,7 +71,7 @@ object Dependencies {
   val lafPlugin = "com.github.insubstantial" % "laf-plugin" % "7.3" // Replacement for laf-plugin-7.2.1.jar
   val lafWidget = "com.github.insubstantial" % "laf-widget" % "7.3" // Replacement for laf-widget-7.2.1.jar
   val lite = "be.cyberelf.nanoxml" % "lite" % "2.2.3" // Replacement for lite-2.2.3.jar
-  val liquibase = "org.liquibase" % "liquibase-core" % "4.15.0" // Replacement for liquibase.jar
+//  val liquibase = "org.liquibase" % "liquibase-core" % "4.15.0" // Replacement for liquibase.jar FIXME: Create liquibase extension for `valueBlobResource`. See #59
   val log4j = "log4j" % "log4j" % "1.2.17" // Replacement for log4j-1.2.17.jar
   val logbackClassic = "ch.qos.logback" % "logback-classic" % "1.2.3" // Replacement for logback-classic-1.2.3.jar
   val logbackCore = "ch.qos.logback" % "logback-core" % "1.2.3" // Replacement for logback-core-1.2.3.jar
@@ -130,7 +130,7 @@ object Dependencies {
     barcode4j,
     iTextAsian,
     js,
-    liquibase,
+//    liquibase,
     lafWidget,
     absoluteLayout,
     rxtx,
@@ -216,6 +216,7 @@ object Dependencies {
   val posUnmanagedDependencies: List[File] = List(
     "lib/ChromisCtrls-v1.1.jar", // ChromisCtrls-v1.1.jar
     "lib/chromiscjtl.jar", // chromiscjtl.jar
+    "lib/liquibase.jar", // liquibase.jar
     "lib/royalblueimages.jar", // royalblueimages.jar
     "lib/jpos-1.13.jar",
     "lib/jasperreports-functions-6.2.1.jar"
