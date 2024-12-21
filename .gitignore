@@ -4,8 +4,8 @@
 /dist/
 /build/
 /manifest.mf
-/derby.log
-/test.db
+derby.log
+test.db
 /chromispos.xml
 /chromispos.xml.backup
 /src-pos.zip
@@ -13,3 +13,23 @@
 chromispos.jar
 /chromisLiquibase.log
 /log4j.xml
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Build tool specific files
+.bloop/
+.bsp/
+.mdoc/
+.metals/
+metals.sbt
+
+# PowerShell specific files
+PowerShell*/
+
+# Build output directories
+target/
+
+# Miscellaneous
+null/
