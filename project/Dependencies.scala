@@ -7,7 +7,7 @@ object Dependencies {
   val activation =
     "javax.activation" % "activation" % "1.1.1" // Replacement for activation-1.0.2.jar. NOTE: Replaced with 1.1.1
   val aopalliance = "aopalliance" % "aopalliance" % "1.0" // Replacement for aopalliance-1.0.jar
-  val ant = "org.apache.ant" % "ant" % "1.7.1" // Replacement for ant-1.7.1.jar
+  val ant = "org.apache.ant" % "ant" % "1.10.15" // Replacement for ant-1.7.1.jar
   val axis = "org.apache.axis" % "axis" % "1.4" // Replacement for axis-1.4.jar
   val axisJaxrpc = "axis" % "axis-jaxrpc" % "1.4" // Replacement for axis-jaxrpc-1.4.jar
   val axisWsdl4j = "wsdl4j" % "wsdl4j" % "1.5.1" // Replacement for axis-wsdl4j-1.5.1.jar
