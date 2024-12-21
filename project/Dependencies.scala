@@ -64,7 +64,7 @@ object Dependencies {
   val js = "org.mozilla" % "rhino" % "1.7.13" // Replacement for js-1
   val jsonSimple = "com.googlecode.json-simple" % "json-simple" % "1.1.1" // Replacement for json-simple-1.1.1.jar
   val jsr311Api = "javax.ws.rs" % "jsr311-api" % "1.1.1" // Replacement for jsr311-api-1.1.1.jar
-  val junit = "junit" % "junit" % "4.11" // Replacement for junit-4.11.jar
+  val junit = "junit" % "junit" % "4.13.2" // Replacement for junit-4.11.jar
   val jxl = "net.sourceforge.jexcelapi" % "jxl" % "2.6.12" // Replacement for jxl-2.4.2.jar. NOTE: Replaced with 2.6.12
   val kxml2 = "net.sf.kxml" % "kxml2" % "2.3.0" // Replacement for kxml2-2.3.0.jar
   val lablibCheckboxtree = "eu.essilab" % "lablib-checkboxtree" % "4.0" // Replacement for lablib-checkboxtree-4.0.jar
