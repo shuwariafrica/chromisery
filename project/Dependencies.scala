@@ -61,7 +61,7 @@ object Dependencies {
   val jline = "jline" % "jline" % "1.0" // Replacement for jline-1.0.jar
   val jodaTime = "joda-time" % "joda-time" % "2.8.2" // Replacement for joda-time-2.8.2.jar
   //  val jpos = "org.jpos" % "jpos" % "1.9.8" // Replacement for jpos-1.13.jar
-  val js = "org.mozilla" % "rhino" % "1.7.13" // Replacement for js-1
+  val js = "org.mozilla" % "rhino" % "1.7.15" // Replacement for js-1
   val jsonSimple = "com.googlecode.json-simple" % "json-simple" % "1.1.1" // Replacement for json-simple-1.1.1.jar
   val jsr311Api = "javax.ws.rs" % "jsr311-api" % "1.1.1" // Replacement for jsr311-api-1.1.1.jar
   val junit = "junit" % "junit" % "4.11" // Replacement for junit-4.11.jar
