@@ -29,7 +29,7 @@ object Dependencies {
   val commonsIo = "commons-io" % "commons-io" % "2.4" // Replacement for commons-io-2.4.jar
   val commonsLang = "commons-lang" % "commons-lang" % "2.6" // Replacement for commons-lang-2.6.jar
   val controlsfx = "org.controlsfx" % "controlsfx" % "8.40.12" // Replacement for controlsfx-8.40.12.jar
-  val derby = "org.apache.derby" % "derby" % "10.14.1.0" // Replacement for derby-10.14.1.0.jar
+  val derby = "org.apache.derby" % "derby" % "10.14.2.0" // Replacement for derby-10.14.1.0.jar
   val ecj = "org.eclipse.jdt" % "ecj" % "3.40.0" // Replacement for ecj-4.4.2.jar
   val fop = "org.apache.xmlgraphics" % "fop" % "2.3" // Replacement for fop-2.3.jar
   val gson = "com.google.code.gson" % "gson" % "2.2.2" // Replacement for gson-2.2.2.jar
