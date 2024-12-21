@@ -10,7 +10,7 @@ object Dependencies {
   val ant = "org.apache.ant" % "ant" % "1.7.1" // Replacement for ant-1.7.1.jar
   val axis = "org.apache.axis" % "axis" % "1.4" // Replacement for axis-1.4.jar
   val axisJaxrpc = "axis" % "axis-jaxrpc" % "1.4" // Replacement for axis-jaxrpc-1.4.jar
-  val axisWsdl4j = "wsdl4j" % "wsdl4j" % "1.5.1" // Replacement for axis-wsdl4j-1.5.1.jar
+  val axisWsdl4j = "wsdl4j" % "wsdl4j" % "1.5.3" // Replacement for axis-wsdl4j-1.5.1.jar
   val backportUtilConcurrent =
     "backport-util-concurrent" % "backport-util-concurrent" % "3.1" // Replacement for backport-util-concurrent-3.1.jar
   val barcode4j = "net.sf.barcode4j" % "barcode4j" % "2.1" // Replacement for barcode4j-2.1.jar
