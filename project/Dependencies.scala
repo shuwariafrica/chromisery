@@ -15,8 +15,8 @@ object Dependencies {
     "backport-util-concurrent" % "backport-util-concurrent" % "3.1" // Replacement for backport-util-concurrent-3.1.jar
   val barcode4j = "net.sf.barcode4j" % "barcode4j" % "2.1" // Replacement for barcode4j-2.1.jar
   val bcmail = "org.bouncycastle" % "bcmail-jdk14" % "1.38" // Replacement for bcmail-jdk14-138.jar
-  val bcpg = "org.bouncycastle" % "bcpg-jdk15on" % "1.50" // Replacement for bcpg-jdk15on-1.50.jar
-  val bcprov = "org.bouncycastle" % "bcprov-jdk15on" % "1.50" // Replacement for bcprov-jdk15on-1.50.jar
+  val bcpg = "org.bouncycastle" % "bcpg-jdk15on" % "1.70" // Replacement for bcpg-jdk15on-1.50.jar
+  val bcprov = "org.bouncycastle" % "bcprov-jdk15on" % "1.70" // Replacement for bcprov-jdk15on-1.50.jar
   val bctsp = "org.bouncycastle" % "bctsp-jdk14" % "1.38" // Replacement for bctsp-jdk14-1.38.jar
   val bluecove = "net.sf.bluecove" % "bluecove-gpl" % "2.1.0" // Replacement for bluecove-gpl-2.1.0.jar
   val bsh = "org.beanshell" % "bsh" % "2.0b5" // Replacement for bsh-2.0b5.jar
