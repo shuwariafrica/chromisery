@@ -4,8 +4,8 @@
 /dist/
 /build/
 /manifest.mf
-/derby.log
-/test.db
+derby.log
+test.db
 /chromispos.xml
 /chromispos.xml.backup
 /src-pos.zip
