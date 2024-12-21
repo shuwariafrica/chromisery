@@ -23,7 +23,7 @@ object Dependencies {
   val colorpicker = "org.drjekyll" % "colorpicker" % "2.0.1" // Replacement for colorpicker.jar
   val commonsCodec = "commons-codec" % "commons-codec" % "1.10" // Replacement for commons-codec-1.10.jar
   val commonsCollections =
-    "commons-collections" % "commons-collections" % "3.2.1" // Replacement for commons-collections-3.2.1.jar
+    "commons-collections" % "commons-collections" % "3.2.2" // Replacement for commons-collections-3.2.1.jar
   val commonsDigester = "commons-digester" % "commons-digester" % "2.1" // Replacement for commons-digester-2.1.jar
   val commonsDiscovery = "commons-discovery" % "commons-discovery" % "0.5" // Replacement for commons-discovery-0.5.jar
   val commonsIo = "commons-io" % "commons-io" % "2.4" // Replacement for commons-io-2.4.jar
