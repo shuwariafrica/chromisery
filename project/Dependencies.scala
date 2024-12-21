@@ -42,7 +42,7 @@ object Dependencies {
   val jasperReports = ("net.sf.jasperreports" % "jasperreports" % "6.2.1")
     .exclude("com.lowagie", "itext") // Replacement for jasperreports-6.2.1.jar
   val jasperreportsFonts =
-    "net.sf.jasperreports" % "jasperreports-fonts" % "6.21.4" // Replacement for jasperreports-fonts-6.2.1.jar
+    "net.sf.jasperreports" % "jasperreports-fonts" % "7.0.1" // Replacement for jasperreports-fonts-6.2.1.jar
   //  val jasperreportsFunctions =
   //    "net.sf.jasperreports" % "jasperreports-functions" % "6.8.0" // Replacement for jasperreports-functions-6.2.1.jar
   val jasypt = "org.jasypt" % "jasypt" % "1.9.1" // Replacement for jasypt-1.9.1.jar
