@@ -45,7 +45,7 @@ object Dependencies {
     "net.sf.jasperreports" % "jasperreports-fonts" % "6.21.4" // Replacement for jasperreports-fonts-6.2.1.jar
   //  val jasperreportsFunctions =
   //    "net.sf.jasperreports" % "jasperreports-functions" % "6.8.0" // Replacement for jasperreports-functions-6.2.1.jar
-  val jasypt = "org.jasypt" % "jasypt" % "1.9.1" // Replacement for jasypt-1.9.1.jar
+  val jasypt = "org.jasypt" % "jasypt" % "1.9.3" // Replacement for jasypt-1.9.1.jar
   val javacsv = "net.sourceforge.javacsv" % "javacsv" % "2.0" // Replacement for javacsv-2.0.jar
   //  val javacsv = "net.sf.opencsv" % "opencsv" % "2.0" // Replacement for javacsv-2.0.jar
   val javatuples = "org.javatuples" % "javatuples" % "1.2" // Replacement for javatuples-1.2.jar
