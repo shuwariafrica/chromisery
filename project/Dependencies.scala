@@ -71,7 +71,7 @@ object Dependencies {
   val lafPlugin = "com.github.insubstantial" % "laf-plugin" % "7.3" // Replacement for laf-plugin-7.2.1.jar
   val lafWidget = "com.github.insubstantial" % "laf-widget" % "7.3" // Replacement for laf-widget-7.2.1.jar
   val lite = "be.cyberelf.nanoxml" % "lite" % "2.2.3" // Replacement for lite-2.2.3.jar
-  val liquibase = "org.liquibase" % "liquibase-core" % "4.15.0" // Replacement for liquibase.jar
+  val liquibase = "org.liquibase" % "liquibase-core" % "4.30.0" // Replacement for liquibase.jar
   val log4j = "log4j" % "log4j" % "1.2.17" // Replacement for log4j-1.2.17.jar
   val logbackClassic = "ch.qos.logback" % "logback-classic" % "1.2.3" // Replacement for logback-classic-1.2.3.jar
   val logbackCore = "ch.qos.logback" % "logback-core" % "1.2.3" // Replacement for logback-core-1.2.3.jar
