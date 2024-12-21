@@ -94,7 +94,7 @@ object Dependencies {
   val orgOsgiCore = "org.osgi" % "org.osgi.core" % "4.3.1" // Replacement for org.osgi.core-4.3.1.jar
   val oro = "oro" % "oro" % "2.0.8" // Replacement for oro-2.0.8.jar
   val poi = "org.apache.poi" % "poi" % "3.12" // Replacement for poi-3.12.jar
-  val postgresql = "org.postgresql" % "postgresql" % "9.4-1201-jdbc4" // Replacement for postgresql-9.4-1201-jdbc4.jar
+  val postgresql = "org.postgresql" % "postgresql" % "9.4-1201-jdbc41" // Replacement for postgresql-9.4-1201-jdbc4.jar
   val rsyntaxtextarea = "com.fifesoft" % "rsyntaxtextarea" % "3.5.3" // Replacement for rsyntaxtextarea-2.6.0.jar
   val rxtx = "org.rxtx" % "rxtx" % "2.1.7" // Replacement for RXTXcomm.jar
   val saajApi = "javax.xml.soap" % "saaj-api" % "1.3.5" // Replacement for saaj-api-1.3.5.jar
