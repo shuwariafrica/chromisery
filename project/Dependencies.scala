@@ -25,7 +25,8 @@ object Dependencies {
   val commonsCollections =
     "commons-collections" % "commons-collections" % "3.2.1" // Replacement for commons-collections-3.2.1.jar
   val commonsDigester = "commons-digester" % "commons-digester" % "2.1" // Replacement for commons-digester-2.1.jar
-  val commonsDiscovery = "commons-discovery" % "commons-discovery" % "0.5" // Replacement for commons-discovery-0.5.jar
+  val commonsDiscovery =
+    "commons-discovery" % "commons-discovery" % "1.0-dev" // Replacement for commons-discovery-0.5.jar
   val commonsIo = "commons-io" % "commons-io" % "2.4" // Replacement for commons-io-2.4.jar
   val commonsLang = "commons-lang" % "commons-lang" % "2.6" // Replacement for commons-lang-2.6.jar
   val controlsfx = "org.controlsfx" % "controlsfx" % "8.40.12" // Replacement for controlsfx-8.40.12.jar
