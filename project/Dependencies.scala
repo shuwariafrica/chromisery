@@ -84,7 +84,7 @@ object Dependencies {
   val luceneSandbox = "org.apache.lucene" % "lucene-sandbox" % "4.5.1" // Replacement for lucene-sandbox-4.5.1.jar
   val mail = "com.sun.mail" % "javax.mail" % "1.4.7" // Replacement for mail-1.4.7.jar
   val miglayout = "com.miglayout" % "miglayout-swing" % "11.4.2" // Replacement for miglayout-4.0.jar
-  val mimepull = "org.jvnet.mimepull" % "mimepull" % "1.9.14" // Replacement for mimepull-1.6.jar
+  val mimepull = "org.jvnet.mimepull" % "mimepull" % "1.9.15" // Replacement for mimepull-1.6.jar
   val mysqlConnectorJava =
     "mysql" % "mysql-connector-java" % "5.1.45" // Replacement for mysql-connector-java-5.1.45.jar
   val nrjavaserial = "com.neuronrobotics" % "nrjavaserial" % "3.11.0" // Replacement for nrjavaserial-3.11.0.jar
