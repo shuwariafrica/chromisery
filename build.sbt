@@ -21,6 +21,7 @@ lazy val `chromisery-pos` = project
   .in(file("modules/chromisery-pos"))
   .gplv3Licensed
   .enablePlugins(JFXPlugin)
+  .enablePlugins(NetbeansPlugin)
   .settings(jfxModules ++= Set(JFXModule.Fxml, JFXModule.Web, JFXModule.Swing))
   .settings(javaCompilerOptions)
   .settings(
