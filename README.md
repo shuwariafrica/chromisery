@@ -78,6 +78,17 @@ The project can be imported for development and compilation by any IDE that supp
 6. The **Scala (Metals)** extension will detect the `build.sbt` file and prompt you to import the project. Click *
    *Import build**.
 
+#### NetBeans (`chromisery-pos` Module Only)
+
+The `chromisery-pos` module can be imported into NetBeans to allow editing of `*.form` files using the GUI editor. The
+instructions below assume that the project is already set up and the `chromisery-pos` module has been compiled. From the
+project root:
+
+1. Execute `sbt netbeans`.
+2. Open NetBeans.
+3. Select **File** > **Open Project...**
+4. Navigate to, and select the `chromisery-pos` module directory.
+
 ## Acknowledgments
 
 We would like to acknowledge the authors and contributors of the following projects, which have laid the foundation for
