@@ -9,6 +9,7 @@
 .metals/
 metals.sbt
 nbproject/
+build.xml
 
 # PowerShell specific files
 PowerShell*/
@@ -20,5 +21,6 @@ build/
 
 # Miscellaneous
 null/
+compare.properties
 derby.log
 test.db
