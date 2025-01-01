@@ -12,32 +12,80 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub token for authentication
 
 jobs:
-  test:
-    name: Execute Tests (${{ matrix.os }}, Java ${{ matrix.java }}) # Job name with dynamic OS and Java version
+  build:
+    name: Build Project
     strategy:
-      fail-fast: false # Continue running all jobs even if one fails
+      fail-fast: false
       matrix:
-        java: [ 17, 21, 23 ] # Java versions to test
-        os: [ ubuntu-24.04, windows-2025 ] # Operating systems to test
-    runs-on: ${{ matrix.os }} # Run the job on the specified OS
+        java: [ 17, 21, 23 ]
+        os: [ ubuntu-24.04, windows-2025 ]
+    runs-on: ${{ matrix.os }}
 
     steps:
+      # Checkout the source code from the repository
       - name: Checkout Source Code
-        uses: actions/checkout@v4 # Checkout the source code from the repository
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch all history for all branches and tags
+          fetch-depth: 0
 
+      # Set up the specified Java version
       - name: Setup Java
-        uses: actions/setup-java@v4 # Set up the specified Java version
+        uses: actions/setup-java@v4
         with:
-          distribution: "temurin" # Use the Temurin distribution of Java
-          java-version: ${{ matrix.java }} # Use the Java version from the matrix
-          check-latest: true # Check for the latest version of the specified Java version
+          distribution: "temurin"
+          java-version: ${{ matrix.java }}
+          check-latest: true
 
+      # Set up SBT (Simple Build Tool)
       - name: Setup SBT
-        uses: sbt/setup-sbt@v1 # Set up SBT (Simple Build Tool)
+        uses: sbt/setup-sbt@v1
 
+      # Compile 'chromisery-pos' Module
       - name: Compile 'chromisery-pos' Module
-        run: sbt chromisery-pos/compile # Run the SBT package command to build the project
+        run: sbt chromisery-pos/compile
 
       # TODO: Add unit testing tasks
+
+  analyse:
+    name: Analyse Project
+    strategy:
+      fail-fast: false
+    runs-on: ubuntu-24.04
+
+    steps:
+      # Checkout the source code from the repository
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Set up the specified Java version
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: 21
+          check-latest: true
+
+      # Set up SBT (Simple Build Tool)
+      - name: Setup SBT
+        uses: sbt/setup-sbt@v1
+
+      # Update the Github dependency graph
+      - name: Update Dependency Graph
+        if: github.ref == 'refs/heads/main'
+        uses: scalacenter/sbt-dependency-submission@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          configs-ignore: scala-doc-tool
+
+      # Create GitHub issues for TODO comments
+      - name: Scan for TODO Comments
+        if: github.ref == 'refs/heads/main'
+        uses: Juulsn/todo-issue@v1.1.4
+        with:
+          autoAssign: false
+          keywords: [ "TODO", "FIXME", "TODO:", "FIXME:" ]
+          label: "todo"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
