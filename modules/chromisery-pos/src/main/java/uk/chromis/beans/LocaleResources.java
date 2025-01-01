@@ -47,8 +47,8 @@ public class LocaleResources {
      * @param bundlename
      */
         
-    public void addBundleName(String bundlename) {
-        m_resources.add(ResourceBundle.getBundle("locales." + bundlename));
+    public void addBundleName(String bundlename) {                // FIXME: Rework locale and resource management
+        m_resources.add(ResourceBundle.getBundle(bundlename));    // See #9 and #61
     }
 
     /**
