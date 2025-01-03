@@ -17,23 +17,11 @@
 # Enable G1 garbage collection (recommended for Java 17 and above)
 -J-XX:+UseG1GC
 
-# Enable class data sharing
--J-XX:+UseAppCDS
-
 # Enable Just-In-Time (JIT) compiler optimizations
 -J-XX:+TieredCompilation
-
-# Enable the use of large pages
--J-XX:+UseLargePages
 
 # Enable the use of compressed object pointers
 -J-XX:+UseCompressedOops
 
 # Enable the use of compressed class pointers
 -J-XX:+UseCompressedClassPointers
-
-# Enable SBT server for faster startup times
--server
-
-# Increase the number of parallel tasks
--parallel
