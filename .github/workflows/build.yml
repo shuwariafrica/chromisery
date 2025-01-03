@@ -85,7 +85,7 @@ jobs:
         uses: Juulsn/todo-issue@v1.1.4
         with:
           autoAssign: false
-          keywords: TODO:, TODO, FIXME:, FIXME
+          keywords: 'TODO:,TODO,FIXME:,FIXME'
           label: "todo"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
