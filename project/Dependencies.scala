@@ -73,8 +73,8 @@ object Dependencies {
   val lite = "be.cyberelf.nanoxml" % "lite" % "2.2.3" // Replacement for lite-2.2.3.jar
 //  val liquibase = "org.liquibase" % "liquibase-core" % "4.15.0" // Replacement for liquibase.jar FIXME: Create liquibase extension for `valueBlobResource`. See #59
   val log4j = "log4j" % "log4j" % "1.2.17" // Replacement for log4j-1.2.17.jar
-  val logbackClassic = "ch.qos.logback" % "logback-classic" % "1.2.3" // Replacement for logback-classic-1.2.3.jar
-  val logbackCore = "ch.qos.logback" % "logback-core" % "1.2.3" // Replacement for logback-core-1.2.3.jar
+  val logbackClassic = "ch.qos.logback" % "logback-classic" % "1.2.13" // Replacement for logback-classic-1.2.3.jar
+  val logbackCore = "ch.qos.logback" % "logback-core" % "1.2.13" // Replacement for logback-core-1.2.3.jar
   val luceneAnalyzersCommon =
     "org.apache.lucene" % "lucene-analyzers-common" % "4.5.1" // Replacement for lucene-analyzers-common-4.5.1.jar
   val luceneCore = "org.apache.lucene" % "lucene-core" % "4.5.1" // Replacement for lucene-core-4.5.1.jar
