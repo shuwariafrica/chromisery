@@ -1,0 +1,27 @@
+# .sbtopts - SBT Options Configuration
+# This file is used to configure options for sbt. Each line in this file represents a different option or parameter.
+# Options prefixed with `-J` are passed directly to the JVM. Other options are specific to SBT itself.
+
+# Set the maximum heap size for the JVM
+-J-Xmx4G  # 5 GB of maximum heap size
+
+# Set the initial heap size for the JVM
+-J-Xms1G  # 2 GB of initial heap size
+
+# Set the stack size for each thread
+-J-Xss2M  # 2 MB of stack size
+
+# Set the maximum metaspace size
+-J-XX:MaxMetaspaceSize=512M
+
+# Enable G1 garbage collection (recommended for Java 17 and above)
+-J-XX:+UseG1GC
+
+# Enable Just-In-Time (JIT) compiler optimizations
+-J-XX:+TieredCompilation
+
+# Enable the use of compressed object pointers
+-J-XX:+UseCompressedOops
+
+# Enable the use of compressed class pointers
+-J-XX:+UseCompressedClassPointers

@@ -2,11 +2,12 @@
 setlocal
 
 rem This script is a wrapper for sbt (Simple Build Tool) that lets developers run sbt without prior installation.
-rem It downloads the sbt-launch jar if it doesn't already exist, and then runs sbt with the provided arguments.
+rem It downloads the sbt-launch jar and script if they don't already exist, and then runs sbt with the provided arguments.
 
 rem Configuration
 set SBT_DIR=.sbt
 set SBT_LAUNCHER_URL_BASE=https://repo1.maven.org/maven2/org/scala-sbt/sbt-launch
+set SBT_SCRIPT_URL_BASE=https://raw.githubusercontent.com/sbt/sbt
 
 rem Ensure the build.properties file exists
 if not exist "project\build.properties" (
@@ -40,5 +41,19 @@ if not exist "%SBT_LAUNCHER_JAR%" (
   )
 )
 
-rem Run sbt with the provided arguments
-java -jar "%SBT_LAUNCHER_JAR%" %*
+rem Check if the sbt script exists
+set SBT_SCRIPT=%SBT_DIR%\sbt.bat
+if not exist "%SBT_SCRIPT%" (
+  echo Downloading sbt script...
+  rem Construct the URL for the sbt script corresponding to the sbt version
+  set SBT_SCRIPT_URL=%SBT_SCRIPT_URL_BASE%/v%SBT_VERSION%/sbt.bat
+  rem Download the sbt script file
+  powershell -Command "Invoke-WebRequest -Uri %SBT_SCRIPT_URL% -OutFile %SBT_SCRIPT%"
+  if %ERRORLEVEL% neq 0 (
+    echo Error: Failed to download sbt script
+    exit /b 1
+  )
+)
+
+rem Delegate to the fetched sbt script with the --sbt-jar option
+call "%SBT_SCRIPT%" --sbt-jar "%SBT_LAUNCHER_JAR%" %*
