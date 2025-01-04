@@ -42,7 +42,6 @@ lazy val `chromisery-pos` = project // TODO: Handle native libraries / extension
     fork := true,
     Compile / mainClass := Some("uk.chromis.pos.forms.StartPOS"),
     autoScalaLibrary := false,
-    managedScalaInstance := false
   )
 
 lazy val `chromisery-pos-root` =
