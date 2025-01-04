@@ -28,9 +28,6 @@ import javax.print.DocFlavor;
 import javax.print.PrintService;
 import javax.print.PrintServiceLookup;
 import javax.swing.ImageIcon;
-import uk.chromis.pos.forms.AppConfig;
-import uk.chromis.pos.forms.AppView;
-import uk.chromis.pos.forms.DataLogicSystem;
 
 /**
  *
