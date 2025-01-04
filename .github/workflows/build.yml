@@ -40,6 +40,10 @@ jobs:
       - name: Setup SBT
         uses: sbt/setup-sbt@v1
 
+      # Compile and test 'chromisery-common' Module
+      - name: Compile 'chromisery-common' Module
+        run: sbt chromisery-common/compile
+
       # Compile 'chromisery-pos' Module
       - name: Compile 'chromisery-pos' Module
         run: sbt chromisery-pos/compile

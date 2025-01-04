@@ -1,11 +1,12 @@
 #!/bin/bash
 # sbtw - Simple Build Tool Wrapper
 # This script is a wrapper for sbt (Simple Build Tool) that lets developers run sbt without prior installation.
-# It downloads the sbt-launch jar if it doesn't already exist, and then runs sbt with the provided arguments.
+# It downloads the sbt-launch jar and script if they don't already exist, and then runs sbt with the provided arguments.
 
 # Configuration
 SBT_DIR=".sbt"
 SBT_LAUNCHER_URL_BASE="https://repo1.maven.org/maven2/org/scala-sbt/sbt-launch"
+SBT_SCRIPT_URL_BASE="https://raw.githubusercontent.com/sbt/sbt"
 
 # Ensure the build.properties file exists
 if [ ! -f "project/build.properties" ]; then
@@ -34,5 +35,19 @@ if [ ! -f "$SBT_LAUNCHER_JAR" ]; then
   fi
 fi
 
-# Run sbt with the provided arguments
-java -jar "$SBT_LAUNCHER_JAR" "$@"
+# Check if the sbt script exists
+SBT_SCRIPT="$SBT_DIR/sbt"
+if [ ! -f "$SBT_SCRIPT" ]; then
+  echo "Downloading sbt script..."
+  # Construct the URL for the sbt script corresponding to the sbt version
+  SBT_SCRIPT_URL="$SBT_SCRIPT_URL_BASE/v$SBT_VERSION/sbt"
+  # Download the sbt script file
+  if ! curl -L -o "$SBT_SCRIPT" "$SBT_SCRIPT_URL"; then
+    echo "Error: Failed to download sbt script"
+    exit 1
+  fi
+  chmod +x "$SBT_SCRIPT"
+fi
+
+# Delegate to the fetched sbt script with the --sbt-jar option
+"$SBT_SCRIPT" --sbt-jar "$SBT_LAUNCHER_JAR" "$@"
