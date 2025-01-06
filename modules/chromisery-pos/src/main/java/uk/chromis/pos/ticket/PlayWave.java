@@ -23,102 +23,84 @@
 
 package uk.chromis.pos.ticket;
 
-import java.io.File; 
-import java.io.IOException; 
-import javax.sound.sampled.AudioFormat; 
-import javax.sound.sampled.AudioInputStream; 
-import javax.sound.sampled.AudioSystem; 
-import javax.sound.sampled.DataLine; 
-import javax.sound.sampled.FloatControl; 
-import javax.sound.sampled.LineUnavailableException; 
-import javax.sound.sampled.SourceDataLine; 
-import javax.sound.sampled.UnsupportedAudioFileException; 
+import java.io.IOException;
+import java.io.InputStream;
+import javax.sound.sampled.*;
 
-public class PlayWave extends Thread { 
- 
+public class PlayWave extends Thread {
+
     private String filename;
- 
     private Position curPosition;
- 
-    private final int EXTERNAL_BUFFER_SIZE = 524288; // 128Kb 
- 
-    enum Position { 
+    private final int EXTERNAL_BUFFER_SIZE = 524288; // 128Kb
+
+    enum Position {
         LEFT, RIGHT, NORMAL
     };
- 
-    public PlayWave(String wavfile) { 
+
+    public PlayWave(String wavfile) {
         filename = wavfile;
         curPosition = Position.NORMAL;
-    } 
- 
-    public PlayWave(String wavfile, Position p) { 
+    }
+
+    public PlayWave(String wavfile, Position p) {
         filename = wavfile;
         curPosition = p;
-    } 
- 
-    public void run() { 
- 
-        File soundFile = new File(filename);
-        if (!soundFile.exists()) { 
+    }
+
+    public void run() {
+        InputStream audioSrc = getClass().getClassLoader().getResourceAsStream("alerts/" + filename);
+        if (audioSrc == null) {
             System.err.println("Wave file not found: " + filename);
             return;
-        } 
- 
+        }
+
         AudioInputStream audioInputStream = null;
-        try { 
-            audioInputStream = AudioSystem.getAudioInputStream(soundFile);
-        } catch (UnsupportedAudioFileException e1) { 
+        try {
+            audioInputStream = AudioSystem.getAudioInputStream(audioSrc);
+        } catch (UnsupportedAudioFileException | IOException e1) {
             e1.printStackTrace();
             return;
-        } catch (IOException e1) { 
-            e1.printStackTrace();
-            return;
-        } 
- 
+        }
+
         AudioFormat format = audioInputStream.getFormat();
         SourceDataLine auline = null;
         DataLine.Info info = new DataLine.Info(SourceDataLine.class, format);
- 
-        try { 
+
+        try {
             auline = (SourceDataLine) AudioSystem.getLine(info);
             auline.open(format);
-        } catch (LineUnavailableException e) { 
+        } catch (LineUnavailableException e) {
             e.printStackTrace();
             return;
-        } catch (Exception e) { 
+        } catch (Exception e) {
             e.printStackTrace();
             return;
-        } 
- 
-        if (auline.isControlSupported(FloatControl.Type.PAN)) { 
-            FloatControl pan = (FloatControl) auline
-                    .getControl(FloatControl.Type.PAN);
-            if (curPosition == Position.RIGHT) 
+        }
+
+        if (auline.isControlSupported(FloatControl.Type.PAN)) {
+            FloatControl pan = (FloatControl) auline.getControl(FloatControl.Type.PAN);
+            if (curPosition == Position.RIGHT)
                 pan.setValue(1.0f);
-            else if (curPosition == Position.LEFT) 
+            else if (curPosition == Position.LEFT)
                 pan.setValue(-1.0f);
-        } 
- 
+        }
+
         auline.start();
         int nBytesRead = 0;
         byte[] abData = new byte[EXTERNAL_BUFFER_SIZE];
- 
-        try { 
-            while (nBytesRead != -1) { 
+
+        try {
+            while (nBytesRead != -1) {
                 nBytesRead = audioInputStream.read(abData, 0, abData.length);
-                if (nBytesRead >= 0) 
+                if (nBytesRead >= 0)
                     auline.write(abData, 0, nBytesRead);
-            } 
-        } catch (IOException e) { 
-            e.printStackTrace();
+            }
+        } catch (IOException e) {
+            e.printStackTrace(); // FIXME: Unified logging and error handling
             return;
-        } finally { 
+        } finally {
             auline.drain();
             auline.close();
-        } 
- 
-    } 
-     
+        }
+    }
 }
-
-
