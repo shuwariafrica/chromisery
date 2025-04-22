@@ -86,7 +86,7 @@ jobs:
       # Create GitHub issues for TODO comments
       - name: Scan for TODO Comments
         if: github.ref == 'refs/heads/main'
-        uses: Juulsn/todo-issue@v1.1.4
+        uses: Juulsn/todo-issue@v1.1.5
         with:
           autoAssign: false
           keywords: "FIXME:"
